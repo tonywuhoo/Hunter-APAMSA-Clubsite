@@ -6,17 +6,17 @@ import MentalHealthResource from "./components/resources/mentalhealth/mentalheal
 import FooterComponent from "./components/footer/footer.jsx"
 import Resources from "./components/resources/resource.jsx"
 import Team from "./components/team/team.jsx"
-import { Routes, Route } from "react-router-dom";
+import { Route, Redirect ,Routes} from 'react-router-dom'
 
 function App() {
   return (
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/Resources/Mentalhealth" element={<MentalHealthResource />}></Route>
-        <Route path="/Resources" element={<Resources/>}></Route>
-        <Route path="/Team" element={<Team/>}></Route>
+        <Route exact path="/" component={Home}></Route>
+        <Route exact path="/Resources/Mentalhealth" component={MentalHealthResource}></Route>
+        <Route exact path="/Resources" component={Resources}></Route>
+        <Route exact path="/Team" component={Team}></Route>
       </Routes>
       <FooterComponent/>
     </div>
