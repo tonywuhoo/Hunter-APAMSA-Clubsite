@@ -1,6 +1,6 @@
 import React from 'react'
-import { Navbar, Nav, NavDropdown, Form, FormControl, Button, Container } from 'react-bootstrap';
-
+import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
+import "./navbar.css"
 export default function NavComponent(props) {
   return (
     <Navbar bg="light" expand="lg">
@@ -11,6 +11,7 @@ export default function NavComponent(props) {
           <Nav className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#link">Link</Nav.Link>
+            <Nav.Link href="https://us6.list-manage.com/survey?u=40df5102d206d3b304e227508&id=403969c2b5">Join Us</Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
