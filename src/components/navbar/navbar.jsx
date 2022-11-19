@@ -10,10 +10,10 @@ export default function NavComponent(props) {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
+            <Nav.Link href="#link">Meet the Team</Nav.Link>
             <Nav.Link href="https://us6.list-manage.com/survey?u=40df5102d206d3b304e227508&id=403969c2b5">Join Us</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+            <NavDropdown title="Resources" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/resources/mentalhealth">Mental Health</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
               </NavDropdown.Item>
